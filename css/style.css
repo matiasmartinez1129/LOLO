@@ -29,6 +29,25 @@
 .li-content a {
     text-decoration: none;
     color: #000;
+    position: relative;
+    border-bottom: 1px solid #fff;
+    transition: 0.2s;
+   
+    
+}
+.li-content a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px; 
+    background-color: #000;
+    transition: width 0.5s ease;
+}
+.li-content a:hover::after{
+    width: 100%;
+    
 }
 
 
@@ -40,7 +59,7 @@
 }
 
 .slider {
-    width: 100vw;
+    width: 100%;
     height: 350px;
     margin: auto;
     overflow: hidden;
@@ -76,5 +95,54 @@
     }
     100% {
         transform: translateX(calc(-180px * 9)); 
+    }
+}
+
+/*------------SEGUNDA SECCION----------*/
+
+.grid-center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.grid-container{    
+    display: grid;
+    grid-template-columns: repeat(4 , 250px);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-content img{ 
+    width: 250px;
+    height: 230px;
+}
+
+
+
+
+
+
+/*----------------MEDIAS---------------*/
+
+
+@media only screen and (max-width: 1055px){
+    .grid-container{
+        grid-template-columns: repeat(3, 250px);
+    }
+}
+@media only screen and (max-width: 800px){
+    .grid-container{
+        grid-template-columns: 250px 250px;
+        gap: 5px;
+    }
+}
+@media only screen and (max-width:532px){
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-content img{
+        width: 180px;
     }
 }
