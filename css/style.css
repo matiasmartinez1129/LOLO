@@ -290,6 +290,9 @@
     .text-product{
         grid-column: 1/2;
     }
+    .buy-button{
+        padding: 21px;
+    }
 }
 @media only screen and (max-width:532px){
     .grid-container{
@@ -298,6 +301,7 @@
     .grid-content img{
         width: 180px;
     }
+    
     
 }
 @media only screen and (max-width:418px){
@@ -314,6 +318,9 @@
     }
     .product-container img {
         width: 220px;
+    }
+    .button-compra{
+        padding-top: 20px;
     }
     
 }
