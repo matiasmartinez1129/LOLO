@@ -212,11 +212,16 @@
 }
 .buy-button:hover{
     transform: scale(1.1);
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
 }
 .carrito:hover{
     transform: scale(1.1);
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
 }
-
 
 
 

@@ -10,11 +10,10 @@ thumbnails.forEach((thumbnail) => {
     thumbnail.addEventListener('click', () => {
         // Cambia el src de la imagen principal al de la miniatura seleccionada
         mainImage.src = thumbnail.src;
-    });
-});
 
-// Restauramos la imagen original cuando el cursor sale de `product-container`
-const productContainer = document.querySelector('.product-container');
-productContainer.addEventListener('mouseleave', () => {
-    mainImage.src = originalSrc;
+        // Inicia el temporizador de 3 segundos para volver a la imagen original
+        setTimeout(() => {
+            mainImage.src = originalSrc;
+        }, 3000); // 3000 milisegundos = 3 segundos
+    });
 });
