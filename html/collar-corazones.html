@@ -4,28 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collar Corazones</title>
+    <script src="https://kit.fontawesome.com/83bd053065.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
         <nav class="nav-bar">
-               <div class="logo-content">
-                <a href="../index.html">
-                    <img src="../images/logo.png" alt="">
+            <div class="logo-content">
+             <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+         </div>
+         <div class="nav-productos">
+             
+            <ul class="ul-content">
+             <li class="li-content dropdown">
+                 <a href="#">Productos</a>
+                 <ul class="submenu">
+                     <li><a href="#">Collares</a></li>
+                     <li><a href="#">Pulseras</a></li>
+                     <li><a href="#">Pilusos</a></li>
+                 </ul>
+             </li>
+             <li class="li-content item-large"><a href="#">Collares</a></li>
+             <li class="li-content item-large"><a href="#">Pulseras</a></li>
+             <li class="li-content item-large"><a href="#">Pilusos</a></li>
+             <li class="li-content"><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+             <li class="li-content"><a href="">Contacto</a></li>
+             <li class="li-content">
+                 <div class="cart-container">
+                     <a href="" class="cart-link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
                     </a>
-            </div>
-            <div class="nav-productos">
-                
-               <ul class="ul-content">
-                <li class="li-content"><a href="">Collares</a></li>
-                <li class="li-content"><a href="">Pulseras</a></li>
-                <li class="li-content"><a href="">Pilusos</a></li>
-               </ul>
-                
+                 </div>
+             </li>
+            </ul>
+             
 
-            </div>
-            
-        </nav>
+         </div>
+         
+     </nav>
     </header>
 
     <main>
@@ -37,6 +54,10 @@
                 </div>
                 <div class="product-container">
                     <img src="../images/collar-corazones.JPG" alt="Collar Principal" id="main-image">
+                    <div class="redes">
+                        <a href="https://www.instagram.com/__accesorioslolo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61566755421116&mibextid=LQQJ4d&rdid=AIVH1x6b2kXKPwBD&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1B5VsvM49h%2F%3Fmibextid%3DLQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
                 </div>
                 
                 <div class="text-product">
@@ -44,13 +65,19 @@
                         <h2>COLLAR CORAZONES</h2>
                         <p class="price">$2500</p>
                         <p>CANTIDAD</p>
-                        <input type="number" placeholder="0">
+                        <input type="number" value="1" min="1">
                     </div>
                    
                     <div class="button-compra">
                         <button class="carrito">AGREGAR AL CARRITO</button>
                         <button class="buy-button">COMPRAR</button>
                     </div>
+                    <div class="text-seguro">
+                        <i class="fa-solid fa-lock"></i>
+                        <div class="description-seguro">
+                            <h3>Compra Protegida</h3>
+                            <p>Tus datos cuidados durante toda la compra</p>
+                        </div>
                     
                 </div>
                
@@ -61,7 +88,44 @@
     </section>
   
     </main>
+    <footer>
+        <div class="container-footer">
+            <div class="box-footer">
+                <div>
+                    
+                    <ul class="ul-footer">
+                        <h3>Categorias</h3>
+                        <li class="li-footer item-large"><a href="#">Collares</a></li>
+                        <li class="li-footer item-large"><a href="#">Pulseras</a></li>
+                        <li class="li-footer item-large"><a href="#">Pilusos</a></li>
+                        <li class="li-footer item-large"><a href="#">¿Quiénes Somos?</a></li>
+                        <li class="li-footer item-large"><a href="#">Contacto</a></li>
 
+                    </ul>
+                </div>
+                <div>
+                    
+                    <ul class="ul-footer">
+                        <h3>Contactanos</h3> 
+                        <li class="li-footer"><i class="fa-solid fa-phone"></i>2291504531</li>
+                        <li class="li-footer"><i class="fa-solid fa-envelope"></i>accesorioslolo2024@gmail.com</li>
+                        <li class="li-footer"><i class="fa-solid fa-location-dot"></i>Miramar, Buenos Aires</li>
+                </div>
+                <div>
+                    <h3>Seguinos</h3>
+                    <ul class="ul-footer-flex">
+                        <li class="li-footer-flex"><a href="https://www.instagram.com/loloaccesorios/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="li-footer-flex"><a href="https://www.facebook.com/loloaccesorios"><i class="fa-brands fa-facebook"></i></a></li>
+                       
+                    </ul>
+                </div>
+                
+            </div>
+            <p>©2023 Lolo Accesorios. Todos los derechos reservados.</p>
+            
+        </div>
+    </footer>
+    
     <script src="../JS/app.js"></script>
 </body>
 </html>
