@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marcellus&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kumbh+Sans:wght@100..900&family=Marcellus&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -25,6 +28,7 @@
 .li-content{
   display: flex;
   padding: 20px;
+ 
   
 }
 .li-content a {
@@ -33,9 +37,11 @@
     position: relative;
     border-bottom: 1px solid #fff;
     transition: 0.2s;
+    font-family: 'Marcellus', sans-serif ;
    
     
 }
+
 .li-content a::after{
     content: '';
     position: absolute;
@@ -146,6 +152,9 @@
 
 .section2 h1{
   text-align: center;
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  
     
 }
 .animation {
@@ -197,9 +206,16 @@
 }
 
 .grid-content{
-  transition: 0.5s;
+  overflow: hidden;
 
-}   
+}  
+.grid-content p{
+    font-family: "Alexandria", sans-serif;
+} 
+.grid-content h2{
+    font-family: "Alexandria", sans-serif;
+    font-weight: 350;
+}
 
 @keyframes show {
 	from {
@@ -223,12 +239,13 @@
 	animation-range: entry 25% cover 30%;
 	animation-fill-mode: both;
 }
-.grid-content:hover{
-    transform: scale(1.1);
-}
 .grid-content img{ 
     width: 250px;
     height: 230px;
+    transition: 0.5s;
+}
+.grid-content img:hover{
+    transform: scale(1.1);
 }
 .grid-content h2{
     font-size: 20px;
@@ -236,6 +253,27 @@
 .grid-content a {
     text-decoration: none;
     color: #000;
+}
+
+
+/*---------------SECTION 3-----------*/
+
+.section3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    overflow: hidden;
+}
+.capsula{
+    overflow: hidden;
+}
+.capsula img{
+    width: 500px;
+    height: auto;
+    transition: 0.5s;
+}
+.capsula img:hover{
+    transform: scale(1.1);
 }
 
 /*-----------PRODUCTOS-----------*/
@@ -292,11 +330,15 @@
     padding-bottom: 20px;
     font-size: 35px;
     color: #000;
+    font-family: "Alexandria", sans-serif;
+    font-weight: 350;
 }
 .text-precio p {
     font-size: 25px;
     color: #000;
     padding-top: 20px;
+    font-family: "Alexandria", sans-serif;
+    font-weight: 250;
 }
 .text-precio input{
     margin-top: 10px;
@@ -346,6 +388,7 @@
 }
 .description-seguro{
     padding-left: 10px;
+    font-family: "Marcellus", sans-serif;
 }
 
 /*-------------QUIENES SOMOS-----------*/
@@ -417,12 +460,14 @@
 .li-footer-flex a {
     text-decoration: none;
     color: #000;
+    
 }
 .li-footer-flex i{
    font-size: 25px;
 }
 .li-footer{
     padding: 10px;
+    font-family: 'Marcellus', sans-serif ;
 }
 
 .li-footer a {
@@ -431,7 +476,7 @@
     position: relative;
     border-bottom: 1px solid #fff;
     transition: 0.2s;
-   
+    font-family: 'Marcellus', sans-serif ;
     
 }
 .li-footer a::after{
@@ -465,6 +510,9 @@
      .buy-button {
         padding: 17.5px;
     }
+    .capsula img{
+        width: 400px;
+    }
 }
 @media only screen and (max-width: 999px){
     .carrito , .buy-button{
@@ -496,7 +544,16 @@
     justify-content: start;
    }
 }
-
+@media only screen and (max-width: 833px){
+    .section3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .capsula{
+        margin-bottom: 20px;
+    }
+}
 @media only screen and (max-width: 800px){
     .grid-container{
         grid-template-columns: 250px 250px;
@@ -578,6 +635,9 @@
 @media only screen and (max-width: 432px){
    .li-content{
     padding: 10px;
+   }
+   .capsula img{
+    width: 300px;
    }
 }
 @media only screen and (max-width:418px){
