@@ -105,7 +105,7 @@
 .bg-section {
     background-color: #000;
     padding: 20px;
-    margin-bottom: 140px;
+    margin-bottom: 50px;
 }
 
 .slider {
@@ -203,12 +203,12 @@
     grid-template-columns: repeat(4 , 250px);
     grid-template-rows: 1fr 1fr;
     gap: 20px;
+    
+}
+.grid-content{
+    transition: 0.5s;
 }
 
-.grid-content{
-  overflow: hidden;
-
-}  
 .grid-content p{
     font-family: "Alexandria", sans-serif;
 } 
@@ -244,7 +244,7 @@
     height: 230px;
     transition: 0.5s;
 }
-.grid-content img:hover{
+.grid-content:hover{
     transform: scale(1.1);
 }
 .grid-content h2{
@@ -660,7 +660,7 @@
     }
     
 }
-@media only screen and (max-width: 352px){
+@media only screen and (max-width: 377px){
     .li-content{
         padding: 5px;
        }
