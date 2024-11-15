@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collar Corazones</title>
     <script src="https://kit.fontawesome.com/83bd053065.js" crossorigin="anonymous"></script>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
         <nav class="nav-bar">
             <div class="logo-content">
-             <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+             <a href="../index.html"><img src="../images/logo.png" alt="Logo"></a>
          </div>
          <div class="nav-productos">
              
@@ -49,8 +50,8 @@
         <section class="bg-section-product">
             <div class="container-img-grid">
                 <div class="img-secundarias">
-                    <img src="../images/collar-corazones2.JPG" alt="" class="thumbnail">
-                    <img src="../images/collar-corazones3.JPG" alt="" class="thumbnail">
+                    <img src="../images/collar-corazones2.JPG" alt="Collar Corazones" class="thumbnail">
+                    <img src="../images/collar-corazones3.JPG" alt="Collar Corazones" class="thumbnail">
                 </div>
                 <div class="product-container">
                     <img src="../images/collar-corazones.JPG" alt="Collar Principal" id="main-image">
@@ -62,16 +63,17 @@
                 
                 <div class="text-product">
                     <div class="text-precio">
-                        <h2>COLLAR CORAZONES</h2>
-                        <p class="price">$2500</p>
+                        <h2 class="name-product">COLLAR CORAZONES</h2>
+                        <p class="price" id="total-price" data-price="2500">$2500</p>
                         <p>CANTIDAD</p>
-                        <input type="number" value="1" min="1">
+                        <input type="number" value="1" min="1" id="quantity">
                     </div>
                    
                     <div class="button-compra">
                         <button class="carrito">AGREGAR AL CARRITO</button>
-                        <button class="buy-button">COMPRAR</button>
+                        <button class="buy-button" id="checkout-btn">COMPRAR</button>
                     </div>
+                    <div id="wallet_container"></div>
                     <div class="text-seguro">
                         <i class="fa-solid fa-lock"></i>
                         <div class="description-seguro">
@@ -124,7 +126,7 @@
             
         </div>
     </footer>
-    
+    <script src="../JS/checkout-pro.js"></script>
     <script src="../JS/app.js"></script>
 </body>
 </html>

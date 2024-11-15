@@ -18,3 +18,5 @@ document.addEventListener('DOMContentLoaded', function () {
     // Verificamos la visibilidad cuando se carga la página
     checkVisibility();
 });
+
+
