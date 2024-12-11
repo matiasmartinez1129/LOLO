@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOLÓ</title>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://kit.fontawesome.com/83bd053065.js" crossorigin="anonymous"></script>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -31,12 +35,15 @@
                 <li class="li-content"><a href="">Contacto</a></li>
                 <li class="li-content">
                     <div class="cart-container">
-                        <a href="" class="cart-link">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span class="cart-count">0</span>
-                        </a>
                         
-                    </div>
+                        <i class="fa-solid fa-cart-shopping" id="verCarrito"></i>
+                        <span class="cart-count">0</span>
+                        <div id="modal-container" class="modal-container">
+                            <div id="wallet_container"></div>
+                        </div>
+                        
+                </div>
+                
                 </li>
                </ul>
                 
@@ -52,24 +59,24 @@
             <div class="slider">
                 <div class="slide-track">
                     <div class="slide"><img src="images/img-pulseras.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar2.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar-flores.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar3.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar4.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar5.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar6.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar7.JPG" alt=""></div>
+                    <div class="slide"><img src="images/index-slider1.jpg" alt=""></div>
+                    <div class="slide"><img src="images/img-collar2.jpg" alt=""></div>
+                    <div class="slide"><img src="images/index-slider3.jpg" alt=""></div>
+                    <div class="slide"><img src="images/index-slider6.jpg" alt=""></div>
+                    <div class="slide"><img src="images/index-slider4.jpg" alt=""></div>
+                    <div class="slide"><img src="images/index-slider5.jpg" alt=""></div>
+                    <div class="slide"><img src="images/aros.jpg" alt=""></div>
+                    <div class="slide"><img src="images/index-slider7.jpg" alt=""></div>
 
                     <div class="slide"><img src="images/img-pulseras.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar2.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar-flores.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar3.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar4.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar5.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar6.JPG" alt=""></div>
-                    <div class="slide"><img src="images/img-collar7.JPG" alt=""></div>
+                    <div class="slide"><img src="images/index-slider1.jpg" alt=""></div>
+                    <div class="slide"><img src="images/img-collar2.jpg" alt=""></div>
+                    <div class="slide"><img src="images/index-slider3.jpg" alt=""></div>
+                    <div class="slide"><img src="images/index-slider6.jpg" alt=""></div>
+                    <div class="slide"><img src="images/index-slider4.jpg" alt=""></div>
+                    <div class="slide"><img src="images/index-slider5.jpg" alt=""></div>
+                    <div class="slide"><img src="images/aros.jpg" alt=""></div>
+                    <div class="slide"><img src="images/index-slider7.jpg" alt=""></div>
                 </div>
 
                 
@@ -161,6 +168,40 @@
             <i class="fa fa-whatsapp"></i>
         </a>
     </div>
+
+    </div>
+
+    <section class="section4">
+    <div class="container">
+        <div class="info-banner">
+          <div class="info-item">
+            <div class="icon"><i class="fa-solid fa-dollar-sign"></i></div>
+            <div class="text">
+              <h3>DESCUENTO DEL 10%</h3>
+              <p>En compras superior a $50000</p>
+            </div>
+          </div>
+  
+          <div class="info-item">
+            <div class="icon"><i class="fa-solid fa-truck"></i></div>
+            <div class="text">
+              <h3>REALIZAMOS ENVÍOS A TODO EL PAÍS</h3>
+              <p>A través de Correo Argentino Shipping (sucursal y domicilio)</p>
+            </div>
+          </div>
+  
+          <div class="info-item">
+            <div class="icon"> <i class="fa-solid fa-lock"></i></div>
+            <div class="text">
+              <h3>SITIO SEGURO</h3>
+              <p>Protegemos tus datos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="modal-container" class="modal-container"></div>
+
     </main>
     
     <footer>
@@ -200,9 +241,10 @@
             
         </div>
     </footer>
-    
-    <script src="../JS/checkout-pro.js"></script>
-    <script src="JS/animation.js"></script>
+    <script src="JS/carrito.js"></script>
+    <script src="JS/animation-h1.js"></script>
+    <script src="JS/checkout-pro.js"></script>
+    <script src="JS/email.js"></script>
     
 </body>
 </html>

@@ -9,10 +9,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.1",
-    "mercadopago": "^2.0.15"
-  }
+    "mercadopago": "^2.0.15",
+    "nodemailer": "^6.9.16"
+  },
+  "devDependencies": {},
+  "description": ""
 }

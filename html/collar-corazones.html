@@ -31,12 +31,12 @@
              <li class="li-content"><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
              <li class="li-content"><a href="">Contacto</a></li>
              <li class="li-content">
-                 <div class="cart-container">
-                     <a href="" class="cart-link">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <span class="cart-count">0</span>
-                    </a>
-                 </div>
+                <div class="cart-container">
+                        
+                    <i class="fa-solid fa-cart-shopping" id="verCarrito"></i>
+                    <span class="cart-count">0</span>
+            
+            </div>
              </li>
             </ul>
              
@@ -54,7 +54,7 @@
                     <img src="../images/collar-corazones3.JPG" alt="Collar Corazones" class="thumbnail">
                 </div>
                 <div class="product-container">
-                    <img src="../images/collar-corazones.JPG" alt="Collar Principal" id="main-image">
+                    <img src="../images/collar-corazones.JPG" alt="Collar Principal" id="main-image" class="product-image">
                     <div class="redes">
                         <a href="https://www.instagram.com/__accesorioslolo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.facebook.com/profile.php?id=61566755421116&mibextid=LQQJ4d&rdid=AIVH1x6b2kXKPwBD&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1B5VsvM49h%2F%3Fmibextid%3DLQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -63,7 +63,7 @@
                 
                 <div class="text-product">
                     <div class="text-precio">
-                        <h2 class="name-product">COLLAR CORAZONES</h2>
+                        <h2 class="name-product" data-id="collar-corazones">COLLAR CORAZONES</h2>
                         <p class="price" id="total-price" data-price="2500">$2500</p>
                         <p>CANTIDAD</p>
                         <input type="number" value="1" min="1" id="quantity">
@@ -85,10 +85,44 @@
                
             </div>
             
-            
+            <div id="modal-container" class="modal-container"></div>
         
     </section>
+    <section class="section4">
+        <div class="container">
+            <div class="info-banner">
+              <div class="info-item">
+                <div class="icon"><i class="fa-solid fa-dollar-sign"></i></div>
+                <div class="text">
+                  <h3>DESCUENTO DEL 10%</h3>
+                  <p>En compras superior a $50000</p>
+                </div>
+              </div>
+      
+              <div class="info-item">
+                <div class="icon"><i class="fa-solid fa-truck"></i></div>
+                <div class="text">
+                  <h3>REALIZAMOS ENVÍOS A TODO EL PAÍS</h3>
+                  <p>A través de Correo Argentino Shipping (sucursal y domicilio)</p>
+                </div>
+              </div>
+      
+              <div class="info-item">
+                <div class="icon"> <i class="fa-solid fa-lock"></i></div>
+                <div class="text">
+                  <h3>SITIO SEGURO</h3>
+                  <p>Protegemos tus datos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
   
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/2291504531" target="_blank" title="Contáctanos por WhatsApp">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+    </div>
     </main>
     <footer>
         <div class="container-footer">
@@ -97,11 +131,11 @@
                     
                     <ul class="ul-footer">
                         <h3>Categorias</h3>
-                        <li class="li-footer item-large"><a href="#">Collares</a></li>
-                        <li class="li-footer item-large"><a href="#">Pulseras</a></li>
-                        <li class="li-footer item-large"><a href="#">Pilusos</a></li>
-                        <li class="li-footer item-large"><a href="#">¿Quiénes Somos?</a></li>
-                        <li class="li-footer item-large"><a href="#">Contacto</a></li>
+                        <li class="li-footer"><a href="#">Collares</a></li>
+                        <li class="li-footer"><a href="#">Pulseras</a></li>
+                        <li class="li-footer"><a href="#">Pilusos</a></li>
+                        <li class="li-footer"><a href="#">¿Quiénes Somos?</a></li>
+                        <li class="li-footer"><a href="#">Contacto</a></li>
 
                     </ul>
                 </div>
@@ -126,7 +160,9 @@
             
         </div>
     </footer>
+    <script src="../JS/button-comprar.js"></script>
+    <script src="../JS/carrito.js"></script>
     <script src="../JS/checkout-pro.js"></script>
-    <script src="../JS/app.js"></script>
+    <script src="../JS/animation-images.js"></script>
 </body>
 </html>
